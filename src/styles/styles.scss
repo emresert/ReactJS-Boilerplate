@@ -1,0 +1,64 @@
+$color: black;
+body {
+	font-family: "Open Sans", sans-serif;
+}
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.App {
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	flex-direction: column;
+	flex: 1;
+	min-height: 100%;
+	position: absolute;
+	justify-content: center;
+	right: 0;
+	left: 0;
+	top: 0px;
+  bottom: 0;
+  animation: pulse 2s normal;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1;
+		max-height: 100px;
+		min-width: 50%;
+		.icon {
+			min-width: 25%;
+			z-index: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 100px;
+			.link {
+        text-decoration: none;
+        color: black;
+			}
+		}
+		.text {
+			text-align: center;
+		}
+	}
+	.img-part {
+		.cat-logo {
+			width: 450px;
+			height: 400px;
+		}
+		.left {
+			transform: scale(-1, 1);
+		}
+		.right {
+			transform: scale(1, 1);
+		}
+	}
+}
+
