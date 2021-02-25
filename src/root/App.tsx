@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState,useEffect } from "react";
 import ReactDOM from "react-dom";
 import { FaGithub, FaLinkedin, FaSpinner } from "react-icons/fa"
 import {endPointUrlForApi} from "../helper/Utils"
@@ -12,6 +12,9 @@ const App: FC = () => {
     const [iconState, setIconState] = useState<direction>("left")
     const endPoint:string = endPointUrlForApi
 
+    useEffect(() => {
+        console.log(process.env.API_KEY)
+    }, [])
     return (
         <div className="App">
             <div className="top">

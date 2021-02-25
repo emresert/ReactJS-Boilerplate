@@ -2,7 +2,7 @@ const HtmlPlugin = require("html-webpack-plugin")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const webpack = require("webpack")
-
+const Dotenv = require('dotenv-webpack')
 function findTurkishShortDateNow() {
   var turkishShortDateNow = new Date();
   const year = turkishShortDateNow.getFullYear();
@@ -81,7 +81,8 @@ module.exports = {
       "process.env": {
         "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
       }
-    })
+    }),
+    new Dotenv()
   ],
 
   devServer: {
