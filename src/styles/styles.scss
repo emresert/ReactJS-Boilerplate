@@ -10,7 +10,16 @@ body {
 		opacity: 1;
 	}
 }
-
+#root{
+	display: flex;
+    align-items: center;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 .App {
 	display: flex;
 	align-items: center;
@@ -23,15 +32,17 @@ body {
 	right: 0;
 	left: 0;
 	top: 0px;
-  bottom: 0;
-  animation: pulse 2s normal;
+    bottom: 0;
+    animation: pulse 2s normal;
+	position: relative;
+	padding-top: 1em;
 	.top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		flex: 1;
 		max-height: 100px;
-		min-width: 50%;
+		min-width: 70%;
 		.icon {
 			min-width: 25%;
 			z-index: 2;
@@ -40,8 +51,8 @@ body {
 			align-items: center;
 			font-size: 100px;
 			.link {
-        text-decoration: none;
-        color: black;
+				text-decoration: none;
+				color: black;
 			}
 		}
 		.text {
@@ -50,14 +61,26 @@ body {
 	}
 	.img-part {
 		.cat-logo {
-			width: 400px;
-			height: 350px;
+			width: 375px;
+			height: 325px;
 		}
 		.left {
 			transform: scale(-1, 1);
 		}
 		.right {
 			transform: scale(1, 1);
+		}
+	}
+	.change-lang-part{
+		position: absolute;
+		top: 5%;
+		left: 2.5%;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		.lang-text{
+			font-size: 14px;
+			font-weight: 700;
 		}
 	}
 }
