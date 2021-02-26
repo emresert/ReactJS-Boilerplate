@@ -14,5 +14,5 @@ Hi! This project includes following contents. Download it and start your own pro
   - **React Icons**
  
  
- ![enter image description here](https://i.hizliresim.com/knyyB1.jpg)
+ ![enter image description here](https://i.hizliresim.com/5VjfI5.jpg)
  
