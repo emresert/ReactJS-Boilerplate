@@ -9,6 +9,7 @@ Hi! This project includes following contents. Download it and start your own pro
   - **Typescript** ,
   - **Dotenv & Cros-Env** ,
   - **Css & Sass** ,
+  - **React-i18next** ,
   - **Font Awesome** ,
   - **React Icons**
  
