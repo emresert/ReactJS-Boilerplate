@@ -10,7 +10,7 @@ Hi! This project includes following contents. Download it and start your own pro
   - **Dotenv & Cros-Env** ,
   - **Css & Sass** ,
   - **Context API** ,
-  - **React Router Dom V6 ** ,
+  - **React Router Dom V6** ,
   - **Axios Generic Method Structure** ,
   - **React-i18next** ,
   - **Font Awesome** ,
